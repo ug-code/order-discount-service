@@ -3,11 +3,11 @@
 DB setting
 ```shell
 DB_CONNECTION=mysql
-DB_HOST=db
+DB_HOST=localhost
 DB_PORT=3306
 DB_DATABASE=laravel
-DB_USERNAME=laravel
-DB_PASSWORD=secret
+DB_USERNAME=root
+DB_PASSWORD=root
 ```
 
 
