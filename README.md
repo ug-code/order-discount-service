@@ -39,3 +39,6 @@ migration
 php artisan migrate --seed
 
 ```
+documentation page
+http://127.0.0.1:8000/request-docs
+![image](https://github.com/user-attachments/assets/698557b1-92f8-4619-be38-bf8e8a411914)
