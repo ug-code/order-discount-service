@@ -36,5 +36,6 @@ http://127.0.0.1:8000
 
 migration
 ```shell
-php artisan migrate:fresh --seed
+php artisan migrate --seed
+
 ```
