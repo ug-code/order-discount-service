@@ -42,3 +42,9 @@ php artisan migrate --seed
 documentation page
 http://127.0.0.1:8000/request-docs
 ![image](https://github.com/user-attachments/assets/698557b1-92f8-4619-be38-bf8e8a411914)
+![image](https://github.com/user-attachments/assets/f474bf1b-d41c-40e6-9a23-d4dc50613c70)
+![image](https://github.com/user-attachments/assets/d3b39d0d-afdc-4d92-9302-61444a6bee1d)
+![image](https://github.com/user-attachments/assets/b5555315-18bc-4a31-ab18-864812533418)
+
+
+
