@@ -3,6 +3,7 @@
 namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Http\Request;
 
 class OrderResource extends JsonResource
 {
@@ -48,14 +49,21 @@ class OrderResource extends JsonResource
     ],
     "total": "112.80"
     */
-    public function toArray($request)
+    public function toArray(Request $request)
     {
+
 
         return [
             'id'         => $this->id,
             'customerId' => $this->customer_id,
             'total'      => $this->total,
-            'items'      => OrderItemResource::collection($this->orderItem),
+            'items'      => $this->orderItems->map(fn($item) => [
+                'productId' => $item->product_id,
+                'orderId'   => $item->order_id,
+                'quantity'  => $item->quantity,
+                'unitPrice' => $item->unit_price,
+                'total'     => $item->total,
+            ]),
         ];
     }
 }

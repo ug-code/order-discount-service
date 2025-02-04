@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Http\Resources\OrderCollection;
+use App\Http\Resources\OrderResource;
 use App\Repositories\OrderRepository;
 use App\Repositories\CustomerRepository;
 use App\Repositories\ProductRepository;
@@ -120,9 +120,9 @@ class OrderService
         }
     }
 
-    public function list(): OrderCollection
+    public function list()
     {
-        return new OrderCollection($this->orderRepository->getAllOrders());
+        return OrderResource::collection($this->orderRepository->getAllOrders());
     }
 
     public function checkDiscount(int $orderId)
