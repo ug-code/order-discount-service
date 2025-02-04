@@ -1,13 +1,13 @@
 # order-discount-service
 
 Laravel 11 was used.
-
+```
 Service → This layer was used to write minimal code by breaking it into small parts.
 Repository → This layer was used for database operations.
 Resource → Used for transforming data in database responses.
 Request → Used for validation.
 The structures mentioned above were implemented.
-
+```
 
 DB setting
 ```shell
